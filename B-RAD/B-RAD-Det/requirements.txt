@@ -1,0 +1,3 @@
+# B-RAD-CLIP, B-RAD-Det and B-RAD-FULL share the repository-root
+# environment, so this just includes it. B-RAD-Seg has its own.
+-r ../../requirements.txt

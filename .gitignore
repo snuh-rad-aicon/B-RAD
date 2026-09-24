@@ -1,0 +1,31 @@
+# Model weights (download with B-RAD/ckpts/download_weights.sh)
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.bin
+
+# Runtime outputs
+**/samples/predictions/
+**/work_dirs/
+**/_seg_tmp/
+**/ckpts/.parts/
+**/results.pkl
+**/B-RAD-Det/results/
+
+# Local datasets / downloads
+**/data/downloads/
+**/data/raw/
+**/data/processed/
+
+# Released metadata (fetch with B-RAD/B-RAD-Det/datasets/download_metadata.sh)
+**/data/metadata/
+**/B-RAD-Det/datasets/metadata/
+
+# Caches and editor files
+**/__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store

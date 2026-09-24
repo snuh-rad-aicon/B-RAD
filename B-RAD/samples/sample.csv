@@ -1,0 +1,9 @@
+uid,image,mask,label,birads,gt_bbox_xyxy,source_dataset
+usg_0000,images/usg_0000.png,masks/usg_0000_mask.png,benign,2,"[167, 4, 430, 216]",Breast-Lesions-USG
+usg_0003,images/usg_0003.png,masks/usg_0003_mask.png,benign,3,"[262, 146, 313, 196]",Breast-Lesions-USG
+usg_0006,images/usg_0006.png,masks/usg_0006_mask.png,malignant,5,"[63, 93, 436, 302]",Breast-Lesions-USG
+usg_0059,images/usg_0059.png,masks/usg_0059_mask.png,malignant,4c,"[242, 99, 323, 217]",Breast-Lesions-USG
+usg_0040,images/usg_0040.png,masks/usg_0040_mask.png,benign,4a,"[372, 103, 577, 184]",Breast-Lesions-USG
+usg_0126,images/usg_0126.png,masks/usg_0126_mask.png,malignant,4b,"[192, 125, 437, 319]",Breast-Lesions-USG
+usg_0232,images/usg_0232.png,masks/usg_0232_mask.png,malignant,4b,"[171, 50, 297, 192]",Breast-Lesions-USG
+usg_0088,images/usg_0088.png,masks/usg_0088_mask.png,malignant,4c,"[167, 120, 257, 212]",Breast-Lesions-USG

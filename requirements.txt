@@ -1,0 +1,18 @@
+# Shared environment for B-RAD-CLIP, B-RAD-Det, B-RAD-FULL, and the demo notebook.
+# B-RAD-Seg needs its own environment (OpenMMLab) - see B-RAD/B-RAD-Seg/README.md.
+torch>=2.1
+torchvision>=0.16
+# transformers is capped below 4.48: the vendored BiomedCLIP code in brad_clip/model/
+# relies on names that 4.48 stopped exporting from transformers.models.clip.modeling_clip.
+transformers>=4.41,<4.48
+timm>=0.9
+pyyaml
+scikit-learn
+opencv-python
+numpy
+pandas
+pillow
+tqdm
+matplotlib
+jupyter
+ipykernel

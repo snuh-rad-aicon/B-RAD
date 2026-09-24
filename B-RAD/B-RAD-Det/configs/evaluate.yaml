@@ -1,0 +1,33 @@
+experiment:
+  seed: null
+  fold: 0
+
+evaluation:
+  dataloader_batch_size: 1
+  anchor_batch_capacity: 128
+  augmentation: false
+  reference_shots: [4]
+  iou_threshold: 0.5
+  birads_classes: ['2', '3', '4a', '4b', '4c', '5']
+
+checkpoint:
+  base_directory: models/checkpoints/base
+  fewshot_directory: models/checkpoints/fewshot
+
+reference_data:
+  root: data/processed
+  train_metadata: data/metadata/splits/fewshot/metadata_train_fold{fold}.csv
+  valid_metadata: data/metadata/splits/evaluation/metadata_valid_fold{fold}.csv
+  ood_metadata: data/metadata/splits/metadata_test.csv
+  paper_crawl_metadata: datasets/metadata/paper_crawl.csv
+
+targets:
+  id_validation:
+    metadata: data/metadata/splits/evaluation/metadata_valid_fold{fold}.csv
+  ood_test:
+    metadata: data/metadata/splits/metadata_test.csv
+  buscot:
+    metadata: data/metadata/external/buscot_with_references.csv
+output:
+  result_dir: results
+  save_predictions: false

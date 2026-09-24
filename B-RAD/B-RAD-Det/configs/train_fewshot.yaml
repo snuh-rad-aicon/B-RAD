@@ -1,0 +1,43 @@
+experiment:
+  name: brad_det_fewshot_1shot
+  seed: null
+  fold: 0
+
+training:
+  epochs: 300
+  batch_size: 16
+  num_workers: 4
+  learning_rate: 0.0001
+  min_learning_rate: 0.0001
+  backbone_learning_rate: 0.0001
+  weight_decay: 0.0001
+  unfreeze_epoch: 30
+  num_unfreeze_blocks: 12
+  initial_iou_threshold: 0.4
+  initial_ignore_threshold: 0.05
+  reference_shots: 1
+
+augmentation:
+  enabled: true
+  noise_std: 5.0
+  rotation_angle: 30.0
+  rotation_probability: 0.4
+
+evaluation:
+  iou_threshold: 0.001
+  visualize: false
+
+data:
+  root: data/processed
+  train_metadata: data/metadata/splits/fewshot/metadata_train_fold{fold}.csv
+  valid_metadata: data/metadata/splits/fewshot/metadata_valid_fold{fold}.csv
+  ood_metadata: data/metadata/splits/metadata_test.csv
+  paper_crawl_metadata: data/metadata/paper_crawl.csv
+  birads_classes: ['2', '3', '4a', '4b', '4c', '5']
+
+checkpoint:
+  reload: models/checkpoints/base
+
+output:
+  checkpoint_dir: models/checkpoints/fewshot
+  result_dir: results/fewshot

@@ -1,0 +1,46 @@
+folds:
+  0:
+    legacy_suffix: ''
+    base_train_source: metadata_merged_top_100_with_bboxes_train.csv
+    base_valid_source: metadata_merged_top_100_with_bboxes_valid.csv
+    fewshot_train_source: metadata_merged_top_100_with_bboxes_train.csv
+    fewshot_valid_source: metadata_merged_top_100_with_bboxes_valid.csv
+    base_final_checkpoint: brad_det_base_final_fold0.pth
+    base_best_checkpoint: brad_det_base_best_fold0.pth
+    fewshot_best_checkpoint: brad_det_fewshot_1shot_best_fold0.pth
+  1:
+    legacy_suffix: _fold1
+    base_train_source: metadata_merged_top_100_with_bboxes_train_fold1.csv
+    base_valid_source: metadata_merged_top_100_with_bboxes_valid_fold1.csv
+    fewshot_train_source: metadata_merged_top_110_paper_crawl_img_txt_train_fold1.csv
+    fewshot_valid_source: metadata_merged_top_110_paper_crawl_img_txt_valid_fold1.csv
+    base_final_checkpoint: brad_det_base_final_fold1.pth
+    base_best_checkpoint: brad_det_base_best_fold1.pth
+    fewshot_best_checkpoint: brad_det_fewshot_1shot_best_fold1.pth
+  2:
+    legacy_suffix: _fold2
+    base_train_source: metadata_merged_top_100_with_bboxes_train_fold2.csv
+    base_valid_source: metadata_merged_top_100_with_bboxes_valid_fold2.csv
+    fewshot_train_source: metadata_merged_top_110_paper_crawl_img_txt_train_fold2.csv
+    fewshot_valid_source: metadata_merged_top_110_paper_crawl_img_txt_valid_fold2.csv
+    base_final_checkpoint: brad_det_base_final_fold2.pth
+    base_best_checkpoint: brad_det_base_best_fold2.pth
+    fewshot_best_checkpoint: brad_det_fewshot_1shot_best_fold2.pth
+  3:
+    legacy_suffix: _fold3
+    base_train_source: metadata_merged_top_100_with_bboxes_train_fold3.csv
+    base_valid_source: metadata_merged_top_100_with_bboxes_valid_fold3.csv
+    fewshot_train_source: metadata_merged_top_110_paper_crawl_img_txt_train_fold3.csv
+    fewshot_valid_source: metadata_merged_top_110_paper_crawl_img_txt_valid_fold3.csv
+    base_final_checkpoint: brad_det_base_final_fold3.pth
+    base_best_checkpoint: brad_det_base_best_fold3.pth
+    fewshot_best_checkpoint: brad_det_fewshot_1shot_best_fold3.pth
+  4:
+    legacy_suffix: _fold4
+    base_train_source: metadata_merged_top_100_with_bboxes_train_fold4.csv
+    base_valid_source: metadata_merged_top_100_with_bboxes_valid_fold4.csv
+    fewshot_train_source: metadata_merged_top_110_paper_crawl_img_txt_train_fold4.csv
+    fewshot_valid_source: metadata_merged_top_110_paper_crawl_img_txt_valid_fold4.csv
+    base_final_checkpoint: brad_det_base_final_fold4.pth
+    base_best_checkpoint: brad_det_base_best_fold4.pth
+    fewshot_best_checkpoint: brad_det_fewshot_1shot_best_fold4.pth

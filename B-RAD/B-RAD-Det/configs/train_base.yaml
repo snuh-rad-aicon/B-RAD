@@ -1,0 +1,39 @@
+experiment:
+  name: brad_det_base
+  seed: null
+  fold: 0
+
+training:
+  epochs: 1000
+  batch_size: 16
+  num_workers: 4
+  learning_rate: 0.002
+  min_learning_rate: 0.0001
+  backbone_learning_rate: 0.0001
+  weight_decay: 0.0001
+  unfreeze_epoch: 100
+  num_unfreeze_blocks: 12
+  initial_iou_threshold: 0.4
+  initial_ignore_threshold: 0.05
+
+augmentation:
+  enabled: true
+  noise_std: 5.0
+  rotation_angle: 30.0
+  rotation_probability: 0.4
+
+evaluation:
+  iou_threshold: 0.1
+  visualize: false
+
+data:
+  root: data/processed
+  train_metadata: data/metadata/splits/base/metadata_train_fold{fold}.csv
+  valid_metadata: data/metadata/splits/base/metadata_valid_fold{fold}.csv
+  test_metadata: data/metadata/splits/metadata_test.csv
+  train_sources: [BUSBRA, BUS-WHU, BUSI, BUS-UCLM]
+  test_sources: [Breast-Lesions-USG, UDIAT-DatasetB, Breast-STU]
+
+output:
+  checkpoint_dir: models/checkpoints/base
+  result_dir: results/base

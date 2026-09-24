@@ -1,0 +1,10 @@
+# Install the OpenMMLab stack with openmim after installing torch==2.0.x (cu118):
+#   pip install openmim
+#   mim install mmengine "mmcv>=2.0.0,<2.2.0" "mmdet>=3.3.0" "mmpretrain>=1.2.0"
+openmim
+opencv-python
+pycocotools
+numpy
+# The UltraSam config's visualizer includes TensorboardVisBackend, and
+# infer_bbox.py always passes --work-dir, so this is required at inference time.
+tensorboard

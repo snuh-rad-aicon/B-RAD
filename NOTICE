@@ -1,0 +1,18 @@
+B-RAD
+Copyright (c) 2026 SNU AICON, Han Jang
+
+Licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+International License (CC BY-NC-SA 4.0); see LICENSE. Non-commercial use only.
+
+Patent notice
+-------------
+The methods in this repository are covered by Korean patent application
+10-2026-0096895. No patent rights are granted by this license; see Section
+2(b)(2) of LICENSE. For commercial use or licensing, please contact the
+corresponding author.
+
+Third-party components
+----------------------
+The UltraSam-derived code and configs in B-RAD/B-RAD-Seg/ are under the same
+license (see B-RAD/B-RAD-Seg/LICENSE). Other vendored code retains its original
+license, noted in the file headers.
